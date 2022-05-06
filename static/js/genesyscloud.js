@@ -2,7 +2,7 @@
 
 const clientId = "e7dfcdc1-b6d1-456b-9f3d-d5106b9ecee5"; // Create a new "Token Implicit Grant (Browser)" OAuth credential in your PureCloud org and paste the Client Id here. See README.md for details
 const redirectUrl = "http://localhost"; // Update this variable to your web server URL (e.g. http://localhost). The value should reflect your "Redirect URL" setting in your OAuth credentials
-const environment = "mypurecloud.ie"; // Your PureCloud environment (e.g. mypurecloud.ie, mypurecloud.de, mypurecloud.com, mypurecloud.com.au, mypurecloud.jp, etc.)
+const environment = "mypurecloud.ie"; // Your Genesys Cloud environment (e.g. mypurecloud.ie, mypurecloud.de, mypurecloud.com, mypurecloud.com.au, mypurecloud.jp, etc.)
 
 const platformClient = require("platformClient");
 const client = platformClient.ApiClient.instance;

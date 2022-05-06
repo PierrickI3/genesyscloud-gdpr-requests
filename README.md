@@ -1,6 +1,6 @@
-# PureCloud GDPR Requests App
+# Genesys Cloud GDPR Requests App
 
-This repository contains code for a static web site that can be embedded inside PureCloud to process GDPR requests. This is provided as developped by the Genesys EMEA Cloud Competence Centre as an example of a frontend to the PureCloud GDPR API.
+This repository contains code for a static web site that can be embedded inside Genesys Cloud to process GDPR requests. This is provided as developped by the Genesys EMEA Cloud Competence Centre as an example of a frontend to the PureCloud GDPR API.
 
 **PLEASE NOTE: This is not an official Genesys application**
 
@@ -20,18 +20,18 @@ This repository contains code for a static web site that can be embedded inside 
   - Set the grant type to `Token Implicit Grant (Browser)`
   - In `Authorized redirect URIs`, enter the URL to reach the `index.html` file (see `Start a web server` section for more info)
   - Click on `Save` and note the `Client ID` string value
-- Edit the `static/js/purecloud.js` file and update the following variables with your own PureCloud credentials
+- Edit the `static/js/genesyscloud.js` file and update the following variables with your own Genesys Cloud credentials
   - clientId: The new OAuth Client Id you just generated
-  - redirectUrl: Corresponds to the full URL to your index.html and must be the same than the one you set in the OAuth credentials above (e.g. `http://localhost:8080/index.html`)
+  - redirectUrl: Corresponds to the full URL to your index.html and must be the same than the one you set in the OAuth credentials above (e.g. `http://localhost`)
   - environment: Either `mypurecloud.ie`, `mypurecloud.de`, `mypurecloud.com`, `mypurecloud.com.au` or `mypurecloud.jp` depending on where your PureCloud org is located
 - Start a web server
   - Under windows, run `start.cmd` (requires Python)
   - Or use your own local web server
-- Browse to http://localhost:8080/index.html (or use your own URL)
+- Browse to http://localhost (or use your own URL)
 
-You can host this static web site using Github Pages if you have a Github Account. The credentials in `static/js/purecloud.js` are not critical as it requires anyone who uses it to also specify a username and password to authenticate. A sample page is available [here](https://github.com/purecloudgdprrequests/purecloudgdprrequests.github.io). In this case, the `Authorized redirect URI` is `https://purecloudgdprrequests.github.io/index.html`
+You can host this static web site using Github Pages if you have a Github Account. The credentials in `static/js/genesyscloud.js` are not critical as it requires anyone who uses it to also specify a username and password to authenticate. A sample page is available [here](https://github.com/purecloudgdprrequests/purecloudgdprrequests.github.io). In this case, the `Authorized redirect URI` is `https://purecloudgdprrequests.github.io/index.html`
 
-## How to embed in PureCloud
+## How to embed in Genesys Cloud
 
 To embed your web site directly inside PureCloud, you need to create a new `Integration`
 
